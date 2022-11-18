@@ -3,7 +3,7 @@
     <head>
       <!-- this is a commment: you can change the title to anything you want but it is also fine to just leave it
       -->
-      <title>template-title</title>
+      <title>anotherkitkat</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,7 +18,7 @@
       <!-- this is a commment: for "imageTargetSrc", change "template-mindar" to the filename that you saved when generating the .mind file, make sure the .mind is immediately behind the filename
       -->
       <a-scene 
-        mindar-image="imageTargetSrc: template-mindar.mind; filterMinCF:0.0001; filterBeta: 1" 
+        mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.0001; filterBeta: 1" 
         color-space="sRGB" 
         renderer="colorManagement: true, physicallyCorrectLights" 
         vr-mode-ui="enabled: false" 
@@ -32,8 +32,8 @@
         delete extra "a-asset-item" if not in use
       -->
         <a-assets>
-          <a-asset-item id="template1" src="template1.glb"></a-asset-item>
-          <a-asset-item id="template2" src="template2.gltf"></a-asset-item>
+          <a-asset-item id="pikachu" src="pikachu.glb"></a-asset-item>
+          <a-asset-item id="among_us" src="among_us.gltf"></a-asset-item>
         </a-assets>
   
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -44,8 +44,8 @@
       -->
         <a-entity mindar-image-target="targetIndex: 0">
           <a-entity
-            id="template1-model"
-            gltf-model="#template1"
+            id="pikachu-model"
+            gltf-model="#pikachu"
             rotation="0 0 0" 
             position="0 0 0" 
             scale="1 1 1" 
@@ -62,8 +62,8 @@
       -->
         <a-entity mindar-image-target="targetIndex: 1">
           <a-entity
-            id="template2-model"
-            gltf-model="#template2"
+            id="among_us-model"
+            gltf-model="#among_us"
             rotation="0 0 0" 
             position="0 0 0" 
             scale="1 1 1" 
